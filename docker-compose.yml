@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  redis:
+    image: redis:6
+    container_name: redis_micro
+    ports:
+      - "6379:6379"
+
+  service-a:
+    build: ./service-a
+    container_name: service-a
+    ports:
+      - "3000:3000"
+    depends_on:
+      - redis
+
+  service-b:
+    build: ./service-b
+    container_name: service-b
+    ports:
+      - "3001:3001"
+    depends_on:
+      - redis
