@@ -1,5 +1,3 @@
-// Exposes a REST endpoint: GET /square/:num
-// It returns the square of a number directly
 import { Controller, Get, Param } from '@nestjs/common';
 
 @Controller()

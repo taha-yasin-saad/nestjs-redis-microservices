@@ -1,5 +1,3 @@
-// Bootstraps service-b as both a REST API (port 3001)
-// and a Redis microservice listener
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { MicroserviceOptions, Transport } from '@nestjs/microservices';

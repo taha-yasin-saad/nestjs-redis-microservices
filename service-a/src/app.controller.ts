@@ -1,5 +1,3 @@
-// Exposes a REST endpoint: GET /double/:num
-// It sends the number to service-b via Redis and returns the doubled result
 import { Controller, Get, Param } from '@nestjs/common';
 import { AppService } from './app.service';
 

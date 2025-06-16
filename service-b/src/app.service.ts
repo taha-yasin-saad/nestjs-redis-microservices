@@ -1,4 +1,3 @@
-// Listens for 'double' messages via Redis and responds with doubled values
 import { Injectable } from '@nestjs/common';
 import { MessagePattern } from '@nestjs/microservices';
 
